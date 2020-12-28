@@ -19,4 +19,4 @@ jobs:
         vswhere-path: 'C:\Program Files (x86)\Microsoft Visual Studio\Installer' 
     - name: Versions
       run: | 
-        python --version
+        MSBuild.exe -version
