@@ -17,3 +17,8 @@ jobs:
       run: dir
     - name: powershell
       run: Get-ChildItem -Recurse .
+        shell: powershell
+    - name: Versions
+      run: | 
+        MSBuild.exe -version
+        cmake --version
