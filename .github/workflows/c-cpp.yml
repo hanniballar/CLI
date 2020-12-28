@@ -14,12 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: dir
-        run: dir
+      run: dir
     - name: powershell
-        run: Get-ChildItem -Recurse .
+      run: Get-ChildItem -Recurse .
     - name: find shell
-        run: (dir 2>&1 *`|echo CMD);&<# rem #>echo PowerShell
+      run: (dir 2>&1 *`|echo CMD);&<# rem #>echo PowerShell
     - name: Versions
-        run: | 
-            MSBuild.exe -version
-            cmake --version
+      run: | 
+        MSBuild.exe -version
+        cmake --version
