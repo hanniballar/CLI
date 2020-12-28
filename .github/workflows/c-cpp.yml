@@ -18,7 +18,8 @@ jobs:
     - name: powershell
       run: Get-ChildItem -Recurse .
     - name: find shell
-      run: (dir 2>&1 *`|echo CMD);&<# rem #>echo PowerShell
+      run: 
+        (dir 2>&1 *`|echo CMD)
     - name: Versions
       run: | 
         MSBuild.exe -version
