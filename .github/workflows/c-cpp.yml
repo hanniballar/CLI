@@ -13,10 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: dir
-      run: dir
-    - name: powershell
-      run: Get-ChildItem -Recurse .
     - name: Versions
       run: | 
         python --version
